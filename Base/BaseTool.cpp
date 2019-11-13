@@ -4,14 +4,8 @@
 using std::string;
 
 
-BaseTool::BaseTool()
-{
-}
-
-
 BaseTool::~BaseTool()
-{
-}
+{}
 
 
 string BaseTool::getEntry(const string &key)

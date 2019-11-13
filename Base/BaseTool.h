@@ -7,11 +7,10 @@
 class BaseTool
 {
 public:
-	BaseTool();
 	virtual ~BaseTool();
 
-	std::string getEntry(const std::string&);
-	void setEntry(const std::string&, const std::string&);
+	virtual std::string getEntry(const std::string&);
+	virtual void setEntry(const std::string&, const std::string&);
 
 private:
 	std::unordered_map<std::string, std::string> entries;
