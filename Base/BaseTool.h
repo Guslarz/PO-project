@@ -1,18 +1,18 @@
 #pragma once
 
-#include <unordered_map>
 #include <string>
+#include <curses.h>
+#include <exception>
 
 
 class BaseTool
 {
 public:
-	virtual ~BaseTool();
+	virtual ~BaseTool() {};
 
-	virtual std::string getEntry(const std::string&);
-	virtual void setEntry(const std::string&, const std::string&);
+	virtual std::string getEntry(const std::string&) const = 0;
+	virtual void setEntry(const std::string&, const std::string&) = 0;
+	virtual void assignWindow(WINDOW*) = 0;
 
-private:
-	std::unordered_map<std::string, std::string> entries;
+	class UndefinedEntry {};
 };
-
