@@ -18,22 +18,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseTool.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseBackend.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="BaseBackend.h">
       <Filter>Base</Filter>
     </ClInclude>
     <ClInclude Include="BaseTool.h">
       <Filter>Base</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
